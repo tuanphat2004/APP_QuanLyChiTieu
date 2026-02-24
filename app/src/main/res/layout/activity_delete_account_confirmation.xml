@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc chắn muốn xóa tài khoản?"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thao tác này không thể khôi phục!"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Xoá toàn bộ thông tin tài khoản"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_confirm_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Có"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#FF0000"
+            android:layout_marginRight="16dp" />
+
+        <Button
+            android:id="@+id/btn_cancel_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#4CAF50" />
+
+    </LinearLayout>
+
+</LinearLayout>

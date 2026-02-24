@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_text_background"
+    android:orientation="vertical"
+    android:textColor="#ffffff">
+
+    <TextView
+        android:id="@+id/tvTongTienChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Tổng tiền chi: 0"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/chartContainerBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvChuThich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

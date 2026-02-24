@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080" />
+
+    <Button
+        android:id="@+id/dangkyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:layout_marginHorizontal="32dp" />
+    <Button
+        android:id="@+id/loginutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+
+        style="@style/ForgotPasswordButton"
+        android:padding="16dp"
+        android:layout_marginHorizontal="32dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Fragment.homeFragment">
+
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/giaodichvi"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Thêm giao dịch"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+
+    <!-- Amount -->
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+
+    <!-- Spinner Category -->
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:padding="16dp"
+        android:text="Chọn nhóm" />
+
+    <!-- Description -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+
+        android:hint="     Thêm ghi chú"
+        android:inputType="text"
+        android:drawableStart="@drawable/baseline_subject_24"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/white" />
+
+    <!-- Date -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableStart="@drawable/baseline_calendar_month_24"
+        android:hint="       Hôm nay"
+        android:inputType="date"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/white" />
+
+    <!-- Spinner Account -->
+    <EditText
+        android:id="@+id/etAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableStart="@drawable/baseline_account_balance_wallet_24"
+        android:hint=   "     Tài Khoản"
+        android:inputType="date"
+        android:padding="17dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/white" />
+
+    <!-- Custom Keyboard -->
+    <GridLayout
+        android:id="@+id/customKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/giaodichvi"
+        android:columnCount="4"
+        android:padding="8dp">
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="7"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="8"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="9"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="÷"
+            app:backgroundTint="@null" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="4"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="5"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="6"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="×"
+            app:backgroundTint="@null" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="1"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="2"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="3"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="-"
+            app:backgroundTint="@null" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="0"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="000"
+            android:textColor="@color/green"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="."
+            app:backgroundTint="@null" />
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="+"
+            app:backgroundTint="@null" />
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="Xóa"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/custom_button"
+            android:text="="
+            app:backgroundTint="@null" />
+
+
+    </GridLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="#60555555"
+        android:padding="16dp"
+        android:text="Lưu"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

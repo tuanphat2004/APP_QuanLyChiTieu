@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".addWallet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên ví"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/nameWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên ví"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số dư"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số dư"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Space for separation -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/> <!-- Adjust height as needed -->
+
+    <Button
+        android:id="@+id/addWallet"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/button_vi"
+        android:padding="15dp"
+        android:text="Tạo ví"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

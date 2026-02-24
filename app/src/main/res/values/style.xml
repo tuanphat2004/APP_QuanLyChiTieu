@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+
+
+    <style name="ForgotPasswordButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#4CAF50</item>
+    </style>
+    <style name="ForgotButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#050505</item>
+    </style>
+    <style name="ForgotButon" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="ForgotRed" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

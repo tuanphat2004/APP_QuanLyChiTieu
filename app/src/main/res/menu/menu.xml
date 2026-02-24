@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_svgrepo_com"
+        android:title="Home"></item>
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/baseline_account_balance_wallet_24"
+        android:title="Ví tiền"></item>
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add"
+        android:title=" "></item>
+    <item
+        android:id="@+id/thongKe"
+        android:icon="@drawable/chart"
+        android:title="Thống kê"></item>
+    <item
+        android:id="@+id/caiDat"
+        android:icon="@drawable/option"
+        android:title="Cài đặt"></item>
+</menu>

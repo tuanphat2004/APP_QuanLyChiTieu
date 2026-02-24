@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="16dp" /> <!-- Thay 16dp bằng giá trị bạn muốn -->
+    <solid android:color="@color/gray_dam" /> <!-- Màu nền của view -->
+</shape>

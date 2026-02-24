@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:orientation="vertical"
+    tools:context=".Fragment.viFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/giaodichvi"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số dư"
+                android:textColor="@color/gray"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/giaodichvi"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/moneyWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000000"
+                android:textColor="@color/white"
+                android:textSize="40dp"></TextView>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/giaodichvi"
+                    app:tabGravity="center"
+                    app:tabMinWidth="120dp"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="10dp"
+                    app:tabPaddingStart="10dp"
+                    app:tabSelectedTextColor="@color/blue"
+                    app:tabTextColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vi_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout>
